@@ -108,7 +108,7 @@ p {
 /* >buttons */
 button.primary {
   font-family: 400;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2rem;
   border: 0;
   border-radius: 100vh;
   color: var(--clr-white-700);
@@ -207,7 +207,7 @@ header :is(.menu, button) {
   header a:hover::after {
     position: absolute;
     left: 0;
-    bottom: calc(-2rem + 5px);
+    bottom: calc(-3rem + 7px);
     content: "";
     width: 100%;
     height: 5px;
