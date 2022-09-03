@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url(./normalize.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 375px;
+}
+
+:root {
+  --clr-title: hsl(233, 26%, 24%);
+  --clr-primary: hsl(136, 65%, 51%);
+  --clr-secondary: hsl(192, 70%, 51%);
+  --clr-text: hsl(233, 8%, 62%);
+  --clr-white-700: hsl(0, 0%, 100%);
+  --clr-white-600: hsl(0, 0%, 98%);
+  --clr-white-400: hsl(220, 16%, 96%);
+}
+
+body {
+  font: 18px "Public Sans", sans-serif;
+  color: var(--clr-text);
+}
+
+.clr-tlt {
+  color: var(--clr-title);
+}
