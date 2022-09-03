@@ -207,6 +207,19 @@
       <p class="copy-rights">© Easybank. All Rights Reserved</p>
     </div>
   </footer>
+
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuBtn = document.querySelector(".menu-btn");
+    menuBtn.addEventListener("click", (e) => {
+      menu.classList.toggle("open")
+
+      if (e.target.src.includes("ham"))
+        e.target.src = "./images/icon-close.svg"
+      else
+        e.target.src = "./images/icon-hamburger.svg"
+    })
+  </script>
 </body>
 
 </html>
