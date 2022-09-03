@@ -53,12 +53,21 @@ h2 {
   margin: 0 auto;
 }
 
+.article h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
 p {
   font-size: 15px;
   line-height: 2.5ch;
   max-width: 340px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.article p {
+  font-size: 14px;
 }
 
 .clr-tlt {
@@ -249,5 +258,53 @@ header :is(.menu, button) {
 
   .features {
     grid-auto-flow: column;
+  }
+}
+
+/* >article section */
+.articles {
+  padding: 4rem 1.5rem;
+}
+
+.articles section {
+  display: grid;
+  gap: 2rem;
+}
+
+.articles .article {
+  text-align: left;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 0 18px 23px 22px var(--clr-white-400);
+  background-color: var(--clr-white-700);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.article img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+.article .content {
+  margin: 2rem;
+}
+
+.article span {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .articles {
+    padding: 5rem 1.5rem;
+  }
+
+  .articles section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  section h2 {
+    grid-column: 1/ -1;
   }
 }
