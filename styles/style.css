@@ -105,6 +105,25 @@ p {
   }
 }
 
+/* >buttons */
+button.primary {
+  font-family: 400;
+  padding: 1rem 2.5rem;
+  border: 0;
+  border-radius: 100vh;
+  color: var(--clr-white-700);
+  background: linear-gradient(
+    to right,
+    var(--clr-primary),
+    var(--clr-secondary)
+  );
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /* >header */
 header {
   position: sticky;
@@ -205,10 +224,22 @@ header :is(.menu, button) {
   background: url(../images/bg-intro-mobile.svg) no-repeat 100% -50px;
 }
 
+.hero-section > div {
+  display: grid;
+}
+
+.hero-section .img {
+  position: relative;
+  width: 90%;
+  height: 500px;
+}
+
 .mockup {
-  display: none;
+  position: absolute;
   width: 360px;
-  transform: translateY(-29%);
+  top: -25.5%;
+  left: 50%;
+  transform: translateX(-45%);
 }
 
 .hero-section .content {
@@ -224,14 +255,17 @@ header :is(.menu, button) {
   }
 
   .hero-section > div {
-    position: relative;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-section .img {
+    order: 2;
   }
 
   .mockup {
-    position: absolute;
-    top: -18%;
-    right: -23%;
+    top: -22%;
     width: 700px;
+    left: 85%;
   }
 
   .hero-section .content {
@@ -290,6 +324,11 @@ header :is(.menu, button) {
 
 .article .content {
   margin: 2rem;
+}
+
+.article h3:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
 }
 
 .article span {
